@@ -1,0 +1,19 @@
+class Car {
+    String color;
+    int speed;
+    Car(String color, int speed) {
+        this.color = color;
+        this.speed = speed;
+    }
+    void display() {
+        System.out.println("Color: " + color + ", Speed: " + speed + " km/h");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Car car1 = new Car("Red", 120);
+        car1.display();
+        Car car2 = new Car("Blue", 150);
+        car2.display();
+    }
+}
